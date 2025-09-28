@@ -1,0 +1,6 @@
+{
+    "serverBundlePath": "./dist/server.bundle",
+    "outputPath": "./dist",
+    "sourcePath": "./src",
+    "appName": "gogreen"
+  }

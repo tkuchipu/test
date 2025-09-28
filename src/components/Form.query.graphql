@@ -1,0 +1,50 @@
+query FormQuery($contextItem: String!) {
+  item(path: $contextItem) {
+    ... on Form {
+      fields {
+        antiForgeryToken {
+          name
+          value
+        }
+        formSessionId {
+          name
+          value
+        }
+        formItemId {
+          name
+          value
+        }
+        pageItemId {
+          name
+          value
+        }
+        fields {
+          fields {
+            valueField {
+              name
+              id
+              value
+            }
+            fieldIdField {
+              name
+              id
+              value
+            }
+            buttonField {
+              name
+              id
+              value
+            }
+            model {
+              title
+              placeholderText
+              required
+              rows
+              maxLength
+            }
+          }
+        }
+      }
+    }
+  }
+}
